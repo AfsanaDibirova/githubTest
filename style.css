@@ -12,12 +12,18 @@
     /* background-color: aqua; */
 }
 
+header {
+    width: 100%;
+    height: 100vh;
+}
+
 .header_head_container {
-    padding: 13px 56px;
+    /* padding: 13px 56px; */
     display: inline-flex;
     gap: 181px;
     align-items: center;
     justify-content: space-between;
+    height: 15vh;
 }
 
 .nav_list {
@@ -40,8 +46,50 @@
 
 .header_banner_container {
     width: 100%;
-    height: 661px;
-    background-image: url("./images/Banner.png");
+    height: 85vh;
+    background-image: url("./images/pexels-pixabay-372470\ 1\ \(1\).png");
+    background-position: center;
+    background-size: cover;
+    background-color: #009CC4;
+    /* background-image: url("./images/Rectangle\ 4.png"); */
+}
+
+.header_banner_container {
+    display: flex;
+    position: relative;
+    /* justify-content: left; */
+}
+
+.header_banner_container div {
+    /* display: flex; */
+    /* margin-top: 171px;
+    margin-bottom: 42px; */
+}
+
+.header_banner_container div h1 {
+    font-family: Unna;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 74.5px;
+    color: #FFFFFF;
+    display: flex;
+    max-width: 752px;
+    position: absolute;
+    margin-right: 50px;
+}
+
+.header_banner_container div p {
+    font-family: PT Serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 59px;
+    color: #FFFFFF;
+    max-width: 641px;
+    position: absolute;
+    margin-left: 50px;
+
+
+
 }
 
 /* first section css */
@@ -54,7 +102,7 @@
 
 .first_section_left {
     width: 393px;
-   
+
 }
 
 .first_section_left a {
@@ -77,25 +125,29 @@
 
 }
 
-.first_section_left p {
+.first_section_left_p {
     font-family: PT Serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 22.4px;
     color: #808080;
-    margin: 38px 0px 50px 42px;
+    padding: 38px 0px 50px 42px;
+    position: relative;
+
 
 
 
 }
-.first_section_left p::before{
-content: "";
-left: 0;
-top: 0;
-width: 2px;
-height: 66px;
-background-color: #009CC4;
-z-index: 3;
+
+.first_section_left_p::before {
+    content: "";
+    left: 0;
+    top: 30px;
+    width: 2px;
+    height: 66px;
+    background-color: #009CC4;
+    z-index: 3;
+    position: absolute;
 
 
 }
@@ -107,31 +159,238 @@ z-index: 3;
     font-weight: 600;
     line-height: 18px;
     color: #009CC4;
-    border: 1px solid #009CC4 ;
+    border: 1px solid #009CC4;
+    background-color: transparent !important;
+
 }
 
 .first_section_right {
     width: 485px;
     height: 401px;
 }
-.second_section{
+
+.second_section {
     display: flex;
     align-items: center;
 }
 
-.second_section_card{
+.second_section_card {
     padding: 76px 65px;
-    border:2px solid #009CC4;
+    /* border: 2px solid #009CC4; */
     width: 480px;
     height: 367px;
 
 }
-.second_section_childs{
+
+.second_section_childs {
     display: flex;
     align-items: center;
     gap: 80px;
 
 }
-.second_section_card p{
-margin-top: 30px;
+
+.second_section_card:nth-child(odd) {
+    background-color: #F3F0E9;
+
+}
+
+.second_section_card p {
+    margin-top: 30px;
+    font-family: PT Serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #808080;
+}
+
+.second_section_childs h3 {
+    font-family: Unna;
+    font-size: 63px;
+    font-weight: 400;
+    line-height: 63px;
+    color: #009CC4;
+}
+
+.second_section_childs h2 {
+    font-family: Unna;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32.2px;
+    color: #313335;
+}
+
+.third_section {
+    display: flex;
+    justify-content: space-between;
+    padding: 127px 217px;
+    gap: 140px;
+}
+
+.third_section_left {
+    max-width: 345px;
+}
+
+.third_section_left h5 a {
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.18px;
+    color: #009CC4
+}
+
+.third_section_left h3 {
+    font-family: Unna;
+    font-size: 53px;
+    font-weight: 400;
+    line-height: 48.94px;
+    color: #313335;
+    margin-top: 13px;
+}
+
+.third_section_left p {
+    font-family: PT Serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    margin-top: 34px;
+    margin-bottom: 50px;
+    color: #808080;
+}
+
+.third_section_left button {
+    padding: 18px 27px;
+    color: #009CC4;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #009CC4;
+    /* background-color: white; */
+    background-color: transparent !important;
+
+    /* line-height: 18px; */
+
+}
+
+.third_section_right_child {
+    display: flex;
+    align-items: center;
+    gap: 43px;
+    margin-bottom: 42px;
+
+}
+
+
+.third_section_right_child button {
+    width: 80px;
+    height: 80px;
+    background-color: #009CC4;
+    border: none;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.third_section_right_child p {
+    font-family: Unna;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.92px;
+    color: #313335;
+}
+
+.fourth_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 63px 177px;
+    background-color: #F3F0E9;
+}
+
+.fourth_section h5 a {
+    font-family: Montserrat;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.18px;
+    color: #009CC4;
+    margin-bottom: 17px;
+
+}
+
+.fourth_section h3 {
+    font-family: Unna;
+    font-size: 53px;
+    font-weight: 400;
+    line-height: 58.44px;
+    text-align: center;
+    color: #313335;
+}
+
+.fourth_section p {
+    font-family: PT Serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 40.8px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 30px 0px 50px 0px;
+    color: #696767;
+}
+
+.fourth_section button {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 18px 27px;
+    color: #4D4D4D;
+    background-color: transparent;
+    border: 1px solid #4D4D4D
+}
+
+.footer_nav {
+    background: #39363D;
+    padding: 80px 165px;
+    height: 337px;
+}
+
+.footer_nav_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+
+.footer_nav_list a {
+    font-family: Unna;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.footer_nav h2 {
+    text-transform: uppercase;
+    font-family: Unna;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40.5px;
+    text-align: center;
+    color: #F2F2F2;
+
+
+}
+
+.footer_end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Unna;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: black;
+    padding: 12px 164px;
+
+
 }
