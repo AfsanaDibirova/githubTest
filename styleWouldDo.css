@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+:root {
+    --white: var(--white);
+    --black: var(--black);
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+.header_head_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 56px;
+    background-color: #FFFFFF;
+    height: 15vh;
+
+}
+
+.nav_list {
+    display: flex;
+    gap: 36px;
+}
+
+.nav_list li a {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4D4D4D;
+
+
+}
+
+.active {
+    color: #009DC4 !important;
+}
+
+.header_bg_container {
+    background-image: url("./imagesWouldDo/Banner\ What\ would\ we\ do\ 3.png");
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 192px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header_bg_container h1 {
+    font-family: Unna;
+    font-size: 62px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.first_section {
+    padding: 100px 130px;
+
+}
+
+.first_section h2 {
+    font-family: Unna;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #4D4D4D;
+
+
+
+}
+
+.first_section div {
+    position: relative;
+    padding-left: 42px;
+}
+
+.first_section div p::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 66px;
+    background-color: #009CC4;
+
+}
+
+.first_section div p {
+    font-family: PT Serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #696767;
+    margin-bottom: 40px;
+}
+
+.second_section {
+    padding: 128px 130px;
+    background: #F3F0E9;
+
+
+}
+
+.second_img_p {
+    display: flex;
+    margin-bottom: 38px;
+    justify-content: space-between;
+    gap: 145px;
+}
+
+.second_img_p div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.second_img_p h3 {
+    font-family: Unna;
+    font-size: 36px;
+    font-weight: 400;
+    color: #4D4D4D;
+}
+
+.second_img_p img {
+    width: 560px;
+    height: 400px;
+}
+
+.p_before {
+    position: relative;
+    padding-left: 42px;
+}
+
+.p_before::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 66px;
+    background: #009CC4;
+
+}
+
+.second_img_p p:first-child {
+    font-family: Unna;
+    font-size: 26px;
+    font-weight: 400;
+    color: #696767;
+    line-height: 32px;
+}
+
+.second_img_p p {
+    font-family: PT Serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #696767;
+}
+
+.second_p_container {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    font-family: PT Serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #696767;
+}
+
+.third_section {
+    padding: 100px 130px;
+    display: flex;
+    gap: 145px;
+    background-color: var(--white);
+
+}
+
+.third_section h3 {
+    font-family: Unna;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #4D4D4D;
+    margin-bottom: 40px;
+}
+
+.third_section img {
+    width: 560px;
+    height: 400px;
+}
+
+.third_section_p {
+    font-family: PT Serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #696767;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    padding-left: 42px;
+
+}
+
+.third_section_p::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 66px;
+    left: 0;
+    top: 0;
+    background-color: #009CC4;
+}
+
+.third_section_p p:first-child {
+    font-family: Unna;
+    font-size: 26px;
+    line-height: 32.5px;
+
+}
+
+.fourth_section {
+    display: flex;
+    padding: 100px 130px;
+    gap: 145px;
+}
+
+.fourth_section img {
+    width: 560px;
+    height: 400px;
+}
+
+.fourth_section h3 {
+    font-family: Unna;
+    font-size: 36px;
+    font-weight: 400;
+    color: #4D4D4D;
+    margin-bottom: 40px;
+
+}
+
+.fourth_section_p {
+    font-family: PT Serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    position: relative;
+    padding-left: 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #696767;
+
+}
+
+.fourth_section_p p:first-child {
+    font-family: Unna;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32.5px;
+
+}
+
+.fourth_section_p p::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 66px;
+    background-color: #009DC4;
+}
+
+.fifth_section_img {
+    background-image: url("./imagesWouldDo/Mask\ Group\ \(27\).png");
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    padding-left: 130px;
+    padding-bottom: 60px;
+}
+
+.fifth_section_img button {
+    padding: 13px 30px;
+    font-family: Unna;
+    font-size: 36px;
+    font-weight: 400;
+    color: #4D4D4D;
+    background-color: #FFFFFF;
+    opacity: 75%;
+    border-radius: 4px;
+    border: none;
+
+}
+
+.fifth_section_p {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    gap: 95px;
+    padding: 50px 130px 100px;
+
+}
+
+.fifth_section_p div {
+    width: 160px;
+}
+
+.fifth_section_p h3 {
+    font-family: PT Serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #009DC4;
+    margin-bottom: 30px;
+}
+
+.fifth_section_p p {
+    font-family: PT Serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #696767;
+}
+.sixth_section{
+    padding: 60px 131px 100px;
+}
+.line_img_container {
+    height: 371px;
+    display: flex;
+    width: 100%;
+
+
+}
+
+.line_img {
+    background-image: url("./imagesWouldDo/Group\ \(3\).png");
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line_img p {
+    width: 230px;
+    background-color: #009DC4;
+
+}
+
+.line_img_second {
+    background-image: url("./imagesWouldDo/Group\ \(4\).png");
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.line_img_second p {
+    width: 230px;
+    background-color: #009DC4;
+
+}
