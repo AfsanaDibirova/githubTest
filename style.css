@@ -18,9 +18,9 @@ header {
 }
 
 .header_head_container {
-    /* padding: 13px 56px; */
-    display: inline-flex;
-    gap: 181px;
+    padding: 13px 56px;
+    display: flex;
+    gap: 180px;
     align-items: center;
     justify-content: space-between;
     height: 15vh;
@@ -30,18 +30,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 36px;
 }
 
 .nav_list li a {
     font-family: Unna;
-    font-size: 26px;
-    font-weight: 400;
-    color: #313335;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4D4D4D;
+
+    text-transform: uppercase;
 }
 
 .active {
-    color: blue !important;
+    color:#009CC4 !important;
 }
 
 .header_banner_container {
@@ -50,49 +52,57 @@ header {
     background-image: url("./images/pexels-pixabay-372470\ 1\ \(1\).png");
     background-position: center;
     background-size: cover;
-    background-color: #009CC4;
-    /* background-image: url("./images/Rectangle\ 4.png"); */
+    
 }
+.header_banner_h1_p_content{
+    height: 100%;
+    background-image: url("./images/V_redraw-without-bg-1\ 9.png");
 
-.header_banner_container {
+    width: 100%;
     display: flex;
-    position: relative;
-    /* justify-content: left; */
+    justify-content: end;
+    
 }
-
-.header_banner_container div {
-    /* display: flex; */
-    /* margin-top: 171px;
-    margin-bottom: 42px; */
+.Rectangle{
+    height: 100%;
+    width: 100%;
+    
+    
 }
+.header_banner_h1_p {
+    background-image: url("./images/Rectangle\ 4.png");
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    opacity: 20%;
+    
+}
+.header_banner_h1_p_content
 
-.header_banner_container div h1 {
-    font-family: Unna;
+
+.header_banner_h1_p_p h1 {
+    /* font-family: Unna;
     font-size: 62px;
     font-weight: 400;
     line-height: 74.5px;
-    color: #FFFFFF;
-    display: flex;
-    max-width: 752px;
-    position: absolute;
-    margin-right: 50px;
+    color: #FFFFFF ;
+    width: 750px;
+    margin-bottom: 42px;
+    opacity: 100%; */
+}
+.header_banner_h1_p_p{
+    z-index: 9;
 }
 
-.header_banner_container div p {
+.header_banner_h1_p_p p {
     font-family: PT Serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 59px;
-    color: #FFFFFF;
-    max-width: 641px;
-    position: absolute;
-    margin-left: 50px;
-
-
-
+    color: #FFFFFF ;
 }
 
-/* first section css */
 .first_section {
     padding: 128px 212px;
     display: flex;
@@ -367,6 +377,7 @@ header {
     font-size: 18px;
     font-weight: 400;
     color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 .footer_nav h2 {

@@ -49,6 +49,7 @@ header {
     font-size: 16px;
     font-weight: 500;
     color: #4D4D4D;
+    text-transform: uppercase;
 
 
 }
@@ -348,45 +349,220 @@ header {
     line-height: 24px;
     color: #696767;
 }
-.sixth_section{
-    padding: 60px 131px 100px;
-}
-.line_img_container {
-    height: 371px;
-    display: flex;
-    width: 100%;
 
+.sixth_section {
+    padding: 60px 131px 100px;
+    background-color: #F3F0E9;
 
 }
 
 .line_img {
-    background-image: url("./imagesWouldDo/Group\ \(3\).png");
-    height: 100%;
+    background-image: url("./imagesWouldDo/Group\ 62.png");
+    height: 371px;
     background-repeat: no-repeat;
-    width: 50%;
+    width: 100%;
+
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 100px;
 }
 
 .line_img p {
     width: 230px;
+    font-family: PT Serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #696767;
+
+}
+
+.sixth_section_first {
+    font-family: Unna;
+    font-size: 36px;
+    font-weight: 400;
+    color: #4D4D4D;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sixth_section_p {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(507px, 1fr));
+}
+
+.sixth_section_p div {
+    max-width: 507px;
+    position: relative;
+    padding-left: 42px;
+}
+
+.sixth_section_p div::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: #009CC4;
+    width: 2px;
+    height: 66px;
+}
+
+.sixth_section_p div h2 {
+    font-family: Unna;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #4D4D4D;
+    margin-bottom: 40px;
+}
+
+.sixth_section_p div p {
+    font-family: PT Serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #696767;
+    margin-bottom: 40px;
+}
+
+
+
+.seventh_section_text {
+    background-color: #FFFFFF;
+    padding: 100px 130px;
+
+}
+
+.seventh_section_text h3 {
+    font-family: Unna;
+    font-size: 36px;
+    font-weight: 400;
+    color: #4D4D4D;
+    margin-bottom: 40px;
+}
+
+.seventh_section_text div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #696767;
+    position: relative;
+    padding-left: 40px;
+
+}
+
+.seventh_section_text div::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 66px;
+    left: 0;
+    top: 0;
+    background-color: #009CC4;
+}
+
+.seventh_section_img {
+    display: flex;
+    background-color: #F3F0E9;
+    padding: 100px 130px;
+    gap: 145px;
+}
+
+.seventh_section_img img {
+    max-width: 641px;
+}
+
+.seventh_section_img h3 {
+    font-family: Unna;
+    font-size: 36px;
+    font-weight: 400;
+    color: #4D4D4D;
+    margin-bottom: 40px;
+
+}
+
+.seventh_section_img p {
+    font-family: PT Serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #696767;
+    position: relative;
+    padding-left: 38px;
+
+}
+
+.seventh_section_img p::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 66px;
     background-color: #009DC4;
 
 }
 
-.line_img_second {
-    background-image: url("./imagesWouldDo/Group\ \(4\).png");
-    height: 100%;
-    width: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
+.footer_head {
+    background-color: #39363D;
+    padding: 80px 140px;
     align-items: center;
 }
 
-.line_img_second p {
-    width: 230px;
-    background-color: #009DC4;
+.footer_head_first {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 55px;
+}
+
+
+
+.footer_head ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.footer_head ul li {
+    font-family: Unna;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+
+}
+
+.footer_head_h4 h4:first-child {
+    margin-bottom: 40px;
+}
+
+.footer_head_h4 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Unna;
+    font-size: 18px;
+    font-weight: 400;
+    color: #F2F2F2;
+
+
+}
+
+.footer_end {
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 140px;
+
+}
+
+.footer_end p {
+    font-family: Unna;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+
 
 }

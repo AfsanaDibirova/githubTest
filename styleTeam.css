@@ -1,0 +1,65 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --blue: #009CC4;
+    --bgGrey: #F3F0E9;
+    --darkGrey: #4D4D4D;
+    --bgFootHead: #39363D;
+    --bgFootEnd: #181818;
+    --lightGrey: #696767;
+
+}
+
+.container {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+header {
+    width: 100%;
+}
+
+.header_head_container {
+    padding: 13px 56px;
+    display: flex;
+    align-items: center;
+    gap: 176px;
+    justify-content: space-between;
+    height: 15vh;
+}
+
+
+.header_bg_container {
+    /* background-image: url("./imagesTeam/teamHeade.png"); */
+    background-image: url("./imagesTeam/teamHeade.png");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.nav_list ul li a {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--darkGrey)
+
+}
+.active{
+    color: var(--blue) !important;
+}
